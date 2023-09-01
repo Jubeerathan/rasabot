@@ -1,0 +1,84 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: share timetable inquiry
+    steps:
+      - intent: share_timetable
+      - action: utter_share_timetable
+
+  - story: minimum credits inquiry
+    steps:
+      - intent: min_credits
+      - action: utter_min_credits
+
+  - story: add/drop period inquiry
+    steps:
+      - intent: add_drop_period
+      - action: utter_add_drop_period
+
+  - story: elective vs optional inquiry
+    steps:
+      - intent: elective_vs_optional
+      - action: utter_elective_vs_optional
+
+  - story: specialization switch inquiry
+    steps:
+      - intent: specialization_switch
+      - action: utter_specialization_switch
+
+  - story: attend other lectures inquiry
+    steps:
+      - intent: attend_other_lectures
+      - action: utter_attend_other_lectures
+
+  - story: GPA calculation for Optional modules inquiry
+    steps:
+      - intent: gpa_calculation_optional
+      - action: utter_gpa_calculation_optional
+
+  - story: subject availability inquiry
+    steps:
+      - intent: subject_availability
+      - action: utter_subject_availability
+
+  - story: credits limit inquiry
+    steps:
+      - intent: credits_limit
+      - action: utter_credits_limit
+
+  - story: course period extension inquiry
+    steps:
+      - intent: course_period_extension
+      - action: utter_course_period_extension
+
+  - story: industrial project alternative inquiry
+    steps:
+      - intent: industrial_project_alternative
+      - action: utter_industrial_project_alternative

@@ -1,0 +1,179 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: share_timetable
+    examples: |
+      - Is it possible to share the timetable for the whole year?
+      - Can I get the timetable for the entire year?
+      - Is the yearly timetable available?
+      - I'd like to see the timetable for the whole year.
+      - Could you provide me with the yearly timetable?
+
+  - intent: min_credits
+    examples: |
+      - What's the minimum number of credits for a semester?
+      - Is there a minimum credit requirement for each semester?
+      - How many credits do I need to take in a semester?
+      - What's the least number of credits I can enroll in?
+      - Is there a minimum credit limit per semester?
+
+  - intent: add_drop_period
+    examples: |
+      - Do we have an add/drop period for this semester?
+      - Can I add or drop modules after the semester starts?
+      - When is the add/drop period for this semester?
+      - Is there a window to add or remove courses after the semester begins?
+      - How long is the add/drop period?
+
+  - intent: elective_vs_optional
+    examples: |
+      - What is the difference between an Elective module and an Optional module?
+      - Explain the distinction between Elective and Optional modules.
+      - Can you clarify the contrast between Elective and Optional modules?
+      - What sets Elective modules apart from Optional modules?
+      - Tell me about the variations between Elective and Optional modules.
+
+  - intent: specialization_switch
+    examples: |
+      - Is it possible to switch the specialization?
+      - Can I change my specialization after starting the program?
+      - Is changing my specialization allowed?
+      - What's the policy on switching specializations?
+      - Can I switch to a different specialization?
+
+  - intent: attend_other_lectures
+    examples: |
+      - Is it possible to attend other lectures which we are not enrolled in? and How?
+      - Can I sit in on lectures I'm not registered for? How does that work?
+      - Am I allowed to go to lectures for courses I'm not taking? How can I do that?
+      - If I'm not enrolled in a class, can I still attend the lectures? How should I proceed?
+      - How can I attend lectures for courses I'm not officially part of?
+
+  - intent: gpa_calculation_optional
+    examples: |
+      - Will the credit for Optional modules also be calculated in GPA?
+      - Do Optional modules contribute to GPA calculation?
+      - Are the credits from Optional courses included in the GPA?
+      - Is the GPA affected by credits from Optional modules?
+      - Do I get GPA points for Optional module credits?
+
+  - intent: subject_availability
+    examples: |
+      - There are quite a few optional and elective subjects in the semester time table. But with time we can do only some. Will the rest of the subjects be available in upcoming semesters?
+      - Can I expect the remaining subjects to be offered in future semesters?
+      - Will the subjects not covered this semester be available in the future?
+      - What about the subjects that I can't take now? Will they be offered later?
+      - Are the subjects not taken this semester offered in upcoming terms?
+
+  - intent: credits_limit
+    examples: |
+      - Is it possible to take more than 36 credits for modules?
+      - Can I enroll in more than 36 credits worth of modules?
+      - Is there a limit to the number of credits I can take per semester?
+      - Can I exceed the 36-credit limit for modules?
+      - What's the maximum number of credits I can register for in a semester?
+
+  - intent: course_period_extension
+    examples: |
+      - Is there any possibility to extend the course period?
+      - Can I get an extension for the course duration?
+      - Is it allowed to prolong the duration of the program?
+      - What if I need more time to complete the course?
+      - Can I extend the program duration beyond the normal period?
+
+  - intent: industrial_project_alternative
+    examples: |
+      - Is it possible to take CS6995 Industrial Project (5 credits) and CS6996 MSc Independent Research (15 credits) instead of the normal dissertation (CS6999)?
+      - Can I choose CS6995 Industrial Project and CS6996 MSc Independent Research instead of CS6999 dissertation?
+      - What if I want to do CS6995 Industrial Project and CS6996 MSc Independent Research instead of the regular dissertation (CS6999)?
+      - Can I substitute CS6999 dissertation with CS6995 Industrial Project and CS6996 MSc Independent Research?
+      - Is it permissible to opt for CS6995 and CS6996 over CS6999 dissertation?

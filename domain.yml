@@ -1,0 +1,91 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - share_timetable
+  - min_credits
+  - add_drop_period
+  - elective_vs_optional
+  - specialization_switch
+  - attend_other_lectures
+  - gpa_calculation_optional
+  - subject_availability
+  - credits_limit
+  - course_period_extension
+  - industrial_project_alternative
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_share_timetable:
+    - text: "The timetable for each semester depends on module availability. We may consider a tentative timetable. If you miss subjects in semesters 1 and 2, you can take them in semesters 4/5 or with the junior batch."
+
+  utter_min_credits:
+    - text: "There is no minimum credit requirement, but it's recommended to complete the compulsory courses."
+
+  utter_add_drop_period:
+    - text: "You can add or drop courses within the first two weeks of the semester. If you need changes later, contact the relevant lecturer and the MSc coordinator."
+
+  utter_elective_vs_optional:
+    - text: "Electives belong to different buckets and require a specific number of modules from that bucket to meet credit requirements. Optionals are not tied to specific buckets and can be taken as needed."
+
+  utter_specialization_switch:
+    - text: "We recommend selecting a specialization at the start and sticking with it. Changing later might make it challenging to catch up with missed subjects."
+
+  utter_attend_other_lectures:
+    - text: "If you wish to attend lectures for courses you're not enrolled in, please contact the respective lecturers for permission and guidance."
+
+  utter_gpa_calculation_optional:
+    - text: "Yes, credits from Optional modules are also calculated in the GPA."
+
+  utter_subject_availability:
+    - text: "The subjects not covered in this semester are usually offered annually. You can consider taking them in upcoming semesters or with the junior batch."
+
+  utter_credits_limit:
+    - text: "While you can take additional credits beyond 36, it's not very common as this would add an extra workload."
+
+  utter_course_period_extension:
+    - text: "The maximum duration for the program is 4 years. The normal duration is 2 years. Extensions beyond 4 years require valid reasons, such as health-related issues, approved by the Faculty PostGraduate board."
+
+  utter_industrial_project_alternative:
+    - text: "Yes, you can opt for CS6995 Industrial Project (5 credits) and CS6996 MSc Independent Research (15 credits) instead of the normal dissertation (CS6999). However, this option is not very popular recently. You should discuss this with MSc coordinators."
+
+actions:
+  - utter_share_timetable
+  - utter_min_credits
+  - utter_add_drop_period
+  - utter_elective_vs_optional
+  - utter_specialization_switch
+  - utter_attend_other_lectures
+  - utter_gpa_calculation_optional
+  - utter_subject_availability
+  - utter_credits_limit
+  - utter_course_period_extension
+  - utter_industrial_project_alternative
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
